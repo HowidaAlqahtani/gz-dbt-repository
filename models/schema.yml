@@ -64,7 +64,16 @@ sources:
           - not_null:
               column_name:
                  - paid_source
-                 - campaing_name
+                 - campaing_nam     
+
+      - name: int_campaigns_day
+        description: data from all campaigns for each day
+        tests:
+          - unique:
+              column_name: date_date
+          - not_null:
+              column_name: date_date
+            
 
             
 
